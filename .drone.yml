@@ -1,0 +1,21 @@
+kind: pipeline
+name: default
+  
+steps:
+  - name: config-set-up 
+    image: python
+             
+    when:
+      status:
+        - failure
+        - success
+    commands:
+      - pip install -r requirements.txt
+      - cd src
+      - touch fyers_token.txt
+      - echo ${token} >> fyers_token.txt
+      - python3 main.py 
+      
+      
+
+
