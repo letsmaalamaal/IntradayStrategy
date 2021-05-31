@@ -1,4 +1,4 @@
-FROM python:3.6
+FROM python:3.8
 
 WORKDIR /code
 
@@ -8,4 +8,4 @@ RUN pip install -r requirements.txt
 
 COPY src/ .
 
-CMD python3 main_bnf_buy.py 
+CMD python3 main.py 

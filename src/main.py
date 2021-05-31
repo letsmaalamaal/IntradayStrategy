@@ -73,11 +73,11 @@ import sys
 from fyers_api import fyersModel 
 
 # Load custom functions and variables
-from Intraday_1 import get_access_token
+# import get_access_token
 from get_latest_data import connect_to_TD, get_data_underlyings, get_data_options
 # Function to authenticate fyers
 def authenticate_fyers():
-    get_access_token.main()
+    # get_access_token.main()
     token = open('fyers_token.txt', 'r').read()
     return token
 

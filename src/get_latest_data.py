@@ -1,7 +1,7 @@
 from truedata_ws.websocket.TD import TD
 from func_timeout import func_timeout, FunctionTimedOut
 import time
-from Intraday_1.config import TD_USERNAME, TD_PASSWORD
+from config import TD_USERNAME, TD_PASSWORD
 
 realtime_port = 8082
 history_port = 8092
